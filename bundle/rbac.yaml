@@ -20,6 +20,13 @@ roles:
   - com.cloudbees.jenkins.plugin.metrics.views.Alerter.View
   - nectar.plugins.rbac.groups.Group.View
   - nectar.plugins.rbac.roles.Role.View
+- name: job-manager
+  filterable: 'true'
+  permissions:
+  - hudson.model.Item.Read
+  - hudson.model.Item.Create
+  - hudson.model.Item.Configure
+  - hudson.model.Item.Build
 groups:
 - name: Administrators
   members:
